@@ -12,6 +12,21 @@
                   httpPort="${default.http.port}"
                   httpsPort="${default.https.port}" />
 
+    <quickStartSecurity userName="duke" userPassword="dukeduke"/>
+
+    <dataSource id="DefaultDataSource" jndiName="jdbc/postgresql">
+        <jdbcDriver libraryRef="postgresql-library"/>
+        <properties.postgresql serverName="user-list"
+                                portNumber="5432"
+                                databaseName="postgres"
+                                user="postgres"
+                                password="postgres"/>
+    </dataSource>
+
+    <library id="postgresql-library">
+        <fileset dir="/opt/ol/wlp/lib"/>
+    </library>
+
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true"/>
 
