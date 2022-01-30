@@ -11,6 +11,8 @@
 
     - Jakarta EE
     - MicroProfile
+    - Lombok
+    - Flyway: Java lib to version database schema and evolve it over time.
 
 ## DB
 

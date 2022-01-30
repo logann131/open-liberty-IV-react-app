@@ -1,4 +1,4 @@
-package com.app.rest;
+package com.app.rest.Service;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
